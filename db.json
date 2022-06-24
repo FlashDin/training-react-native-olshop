@@ -9,28 +9,28 @@
     },
     {
       "id": 3,
-      "name": "product 1",
+      "name": "product 2",
       "quantity": 10,
       "price": 10000,
       "description": "jkjlkjljkljjkjkjkjk"
     },
     {
       "id": 2,
-      "name": "product 1",
+      "name": "incan 1",
       "quantity": 10,
       "price": 10000,
       "description": "jkjlkjljkljjkjkjkjk"
     },
     {
       "id": 4,
-      "name": "product 1",
+      "name": "mie sari",
       "quantity": 10,
       "price": 10000,
       "description": "jkjlkjljkljjkjkjkjk"
     },
     {
       "id": 5,
-      "name": "product 1",
+      "name": "nes lie",
       "quantity": 10,
       "price": 10000,
       "description": "jkjlkjljkljjkjkjkjk"

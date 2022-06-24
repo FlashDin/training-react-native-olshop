@@ -85,6 +85,7 @@ const DetailBox = (props) => {
 
 const DetailWithScrollWiewBox = (props) => {
     const [imageData, setImageData] = React.useState([]);
+    const screenWidth = Dimensions.get('window').width;
 
     React.useEffect(() => {
         showImage(0);
@@ -105,28 +106,42 @@ const DetailWithScrollWiewBox = (props) => {
         setImageData(imgData);
     };
 
+    const scrollViewRef = React.useRef();
+
     return <View>
         <View style={styles.box}>
             <ScrollView style={styles.scrollView}
                         horizontal={true}
+                        showsVerticalScrollIndicator={false}
+                        showsHorizontalScrollIndicator={false}
+                        scrollEnabled={true}
+                        onScroll={(event) => {
+                            const scrolling = event.nativeEvent.contentOffset.x;
+                            if (scrolling === screenWidth / 2) {
+                                scrollViewRef.current.scrollTo({ x: screenWidth, y: 0, animated: false })
+                            } else {
+                                scrollViewRef.current.scrollTo({ x: scrolling + screenWidth, y: 0, animated: false })
+                            }
+                            // if (scrolling > 100) {
+                            // }
+                        }}
+                        // scrollEventThrottle={screenWidth}
+                        ref={scrollViewRef}
+                        // onContentSizeChange={() => scrollViewRef.current.scrollToEnd({ animated: true })}
+                        // onContentSizeChange={() => scrollViewRef.current.scrollTo({ x: screenWidth, y: 0, animated: true })}
             >
             {
-                imageData.map((v, i) => <TouchableOpacity
-                    style={{
-                        width: Dimensions.get('window').width,
-                        ...styles.showImage(true)
-                    }}
-                    onPress={() => {
-                        showImage(1 + i);
-                    }}
-                >
+                imageData.map((v, i) => <View style={{
+                    width: screenWidth,
+                    ...styles.showImage(true)
+                }}>
                     <Image source={{
                         uri: v.path,
                     }}
                            style={styles.image}
                     />
                     <Text>{1 + i}</Text>
-                </TouchableOpacity>)
+                </View>)
             }
             </ScrollView>
             <View style={styles.addToChartBox}>

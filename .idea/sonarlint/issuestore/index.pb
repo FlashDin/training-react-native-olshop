@@ -25,3 +25,5 @@ J
 screens/home/HomeScreen.js,3/2/3212522ad4a883b3a24b3d90fa14b46a6e04d8f1
 7
 db.json,8/8/882a43610b9835dd51ca4ad37a0967fa0205e328
+g
+7screens/product-detail/ProductDetailScrollViewScreen.js,5/0/50a7d6238dd3c555d9920d21581bd55ca45bf08b

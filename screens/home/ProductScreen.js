@@ -1,6 +1,6 @@
 import React from "react";
 import {AuthContext} from "../login/AuthContext";
-import {View, Text, Button, FlatList, SafeAreaView} from "react-native";
+import {View, Text, Button, FlatList, SafeAreaView, TextInput} from "react-native";
 import ProductBox from "../../components/ProductBox";
 import {styles} from "../../components/Styles";
 
@@ -13,7 +13,6 @@ const ProductScreen = ({navigation}) => {
             .then((t) => t.json())
             .then((t) => {
                 setData(t);
-                console.log(t);
             })
             .catch((error) => {
                 console.error(error);
@@ -25,9 +24,15 @@ const ProductScreen = ({navigation}) => {
     }, []);
 
     return <SafeAreaView style={styles.container}>
-        <Button
-            title={"Sign Out"}
-            onPress={signOut}
+        {/*<Button*/}
+            {/*title={"Sign Out"}*/}
+            {/*onPress={signOut}*/}
+        {/*/>*/}
+        <TextInput
+            style={styles.input}
+            onPressIn={() => {
+                navigation.navigate('Search');
+            }}
         />
         <FlatList
             data={data}

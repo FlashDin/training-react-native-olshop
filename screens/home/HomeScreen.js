@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import ProductScreen from "./ProductScreen";
 import ProductDetailScreen from "../product-detail/ProductDetailScreen";
 import ProductDetailScrollViewScreen from "../product-detail/ProductDetailScrollViewScreen";
+import SearchScreen from "./SearchSceen";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ const HomeScreen = ({navigation}) => {
         <Stack.Screen name="Product" component={ProductScreen}/>
         <Stack.Screen name="ProductDetail" component={ProductDetailScreen}/>
         <Stack.Screen name="ProductDetailScrollView" component={ProductDetailScrollViewScreen}/>
+        <Stack.Screen name="Search" component={SearchScreen}/>
     </Stack.Navigator>
 };
 export default HomeScreen
