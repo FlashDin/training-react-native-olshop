@@ -8,8 +8,9 @@ const ProductScreen = ({navigation}) => {
     const {signOut} = React.useContext(AuthContext);
     const [data, setData] = React.useState([]);
 
-    const getProducts = () => {
-        return fetch('http://192.168.56.1:3000/products?_embed=product_images')
+    const getProducts = (keyword) => {
+        console.log(keyword);
+        return fetch(`http://192.168.56.1:3000/products?_embed=product_images?name_like=${keyword}`)
             .then((t) => t.json())
             .then((t) => {
                 setData(t);
@@ -31,7 +32,9 @@ const ProductScreen = ({navigation}) => {
         <TextInput
             style={styles.input}
             onPressIn={() => {
-                navigation.navigate('Search');
+                navigation.navigate('Search', {
+                    onGoBack: (keyword) => getProducts(keyword)
+                });
             }}
         />
         <FlatList

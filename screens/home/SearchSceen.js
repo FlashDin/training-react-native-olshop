@@ -1,13 +1,13 @@
 import React from "react";
 import {AuthContext} from "../login/AuthContext";
-import {View, Text, Button, FlatList, SafeAreaView, TextInput} from "react-native";
+import {View, TouchableOpacity, Text, Button, FlatList, SafeAreaView, TextInput} from "react-native";
 import ProductBox from "../../components/ProductBox";
 import {styles} from "../../components/Styles";
 
-const ProductScreen = ({navigation}) => {
+const ProductScreen = ({navigation: { goBack }, ...props}) => {
     const {signOut} = React.useContext(AuthContext);
     const [data, setData] = React.useState([]);
-    const [searchText, setSearchText] = React.useState([]);
+    const [searchText, setSearchText] = React.useState("");
 
     const getProducts = (keyword) => {
         if (keyword !== "") {
@@ -24,6 +24,13 @@ const ProductScreen = ({navigation}) => {
         }
     };
 
+    const searchBack = (keyword) => {
+        // back to product screen
+        // route.params.onGoBack(keyword);
+        props.route.params.onGoBack(keyword);
+        goBack();
+    };
+
     return <SafeAreaView style={styles.container}>
         {/*<Button*/}
         {/*title={"Sign Out"}*/}
@@ -32,13 +39,23 @@ const ProductScreen = ({navigation}) => {
         <TextInput
             style={styles.input}
             onChangeText={(value) => {
+                setSearchText(value);
                 getProducts(value);
+            }}
+            onSubmitEditing={() => {
+                searchBack(searchText);
             }}
         />
         <FlatList
             data={data}
             renderItem={({item}) =>
-                <Text>{item.name}</Text>
+                <TouchableOpacity
+                    onPress={() => {
+                        searchBack(item.name);
+                    }}
+                >
+                    <Text>{item.name}</Text>
+                </TouchableOpacity>
             }
         />
 
