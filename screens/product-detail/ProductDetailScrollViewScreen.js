@@ -45,22 +45,7 @@ const ProductDetailScrollViewScreen = ({route, navigation}) => {
                 title={data.name}
                 readyQty={data.quantity}
                 description={data.description}
-            >
-                <FlatList
-                    data={datas}
-                    renderItem={({item}) =>
-                        <ProductBox title={item.name}
-                                    price={item.price}
-                                    showDetail={() => {
-                                        navigation.navigate('ProductDetail', {
-                                            id: item.id
-                                        });
-                                    }}
-                        />
-                    }
-                    numColumns={2}
-                />
-            </DetailWithScrollWiewBox> : <ActivityIndicator size="large" color="#00ff00" />
+            /> : <ActivityIndicator size="large" color="#00ff00" />
         }
     </SafeAreaView>
 };

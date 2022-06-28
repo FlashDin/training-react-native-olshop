@@ -4,6 +4,7 @@ import ProductScreen from "./ProductScreen";
 import ProductDetailScreen from "../product-detail/ProductDetailScreen";
 import ProductDetailScrollViewScreen from "../product-detail/ProductDetailScrollViewScreen";
 import SearchScreen from "./SearchSceen";
+import {Text, Button} from "react-native";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,8 @@ const HomeScreen = ({navigation}) => {
                                 headerShown: false
                             }}
     >
-        <Stack.Screen name="Product" component={ProductScreen}/>
+        <Stack.Screen name="Product" component={ProductScreen}
+        />
         <Stack.Screen name="ProductDetail" component={ProductDetailScreen}/>
         <Stack.Screen name="ProductDetailScrollView" component={ProductDetailScrollViewScreen}/>
         <Stack.Screen name="Search" component={SearchScreen}/>

@@ -27,3 +27,15 @@ J
 db.json,8/8/882a43610b9835dd51ca4ad37a0967fa0205e328
 g
 7screens/product-detail/ProductDetailScrollViewScreen.js,5/0/50a7d6238dd3c555d9920d21581bd55ca45bf08b
+K
+screens/home/SearchSceen.js,e/3/e3bfafe9d628cf27bfe6c6362effbca50924bdac
+8
+eas.json,b/2/b2c6faa35c1c551556c81b82f88d4b81f53d18f0
+H
+.expo/packager-info.json,a/0/a0d452c857fb5ea9c7f929fc90802c4253801702
+?
+.expo/README.md,0/7/0706b2bfe323079343478205e07882bf3a190a79
+H
+.expo-shared/assets.json,1/9/191cfe8c0c0bbcad6e092d2a84a5d0c258b09de6
+C
+.expo/settings.json,0/9/09c8edc4e2ef849e5cb8c4f94f2d30f0a21596ea

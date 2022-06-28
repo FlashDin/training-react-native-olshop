@@ -31,21 +31,39 @@ const ProductScreen = ({navigation: { goBack }, ...props}) => {
         goBack();
     };
 
+    const clearSearchField = () => {
+        setSearchText("");
+        getProducts("");
+    };
+
     return <SafeAreaView style={styles.container}>
         {/*<Button*/}
         {/*title={"Sign Out"}*/}
         {/*onPress={signOut}*/}
         {/*/>*/}
-        <TextInput
-            style={styles.input}
-            onChangeText={(value) => {
-                setSearchText(value);
-                getProducts(value);
-            }}
-            onSubmitEditing={() => {
-                searchBack(searchText);
-            }}
-        />
+        <View
+            style={styles.viewInput}
+        >
+            <TextInput
+                style={{
+                    width: '100%'
+                }}
+                onChangeText={(value) => {
+                    setSearchText(value);
+                    getProducts(value);
+                }}
+                onSubmitEditing={() => {
+                    searchBack(searchText);
+                }}
+                value={searchText}
+            />
+            <TouchableOpacity
+                style={styles.clear}
+                onPress={() => clearSearchField()}
+            >
+                <Text>x</Text>
+            </TouchableOpacity>
+        </View>
         <FlatList
             data={data}
             renderItem={({item}) =>

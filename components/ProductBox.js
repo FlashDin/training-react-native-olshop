@@ -7,14 +7,13 @@ const ProductBox = (props) => {
         onPress={props.showDetail}
         style={styles.box}>
         <View style={styles.imageBox}>
-            <Image
-                style={styles.image}
-                source={{
-                    uri: props.imageDefault,
-                }}
-            />
             <View style={styles.liteBox}>
-
+                <Image
+                    style={styles.image}
+                    source={{
+                        uri: props.imageDefault,
+                    }}
+                />
             </View>
         </View>
         <View style={styles.innerBox}>
@@ -36,9 +35,15 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         borderColor: "#fff",
-        width: '50%'
+        width: '50%',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 5
     },
     innerBox: {
+        marginTop: 20,
         padding: 10
     },
     title: {
@@ -49,14 +54,21 @@ const styles = StyleSheet.create({
         margin: 4
     },
     image: {
-        width: '100%',
+        width: '50%',
         height: 115,
+        position: 'absolute',
+        bottom: 16
     },
     imageBox: {
         height: 115
     },
     liteBox: {
-
+        backgroundColor: '#69a69c',
+        alignItems: 'center',
+        margin: 10,
+        marginTop: 20,
+        borderRadius: 16,
+        height: 115,
     }
 });
 

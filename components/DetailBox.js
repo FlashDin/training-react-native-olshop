@@ -85,6 +85,8 @@ const DetailBox = (props) => {
 
 const DetailWithScrollWiewBox = (props) => {
     const [imageData, setImageData] = React.useState([]);
+    const [num, setNum] = React.useState(1);
+
     const screenWidth = Dimensions.get('window').width;
 
     React.useEffect(() => {
@@ -152,14 +154,20 @@ const DetailWithScrollWiewBox = (props) => {
                 <Button
                     title="-"
                     style={styles.qtyBtn}
+                    onPress={() => {
+                        setNum(num - 1);
+                    }}
                 />
                 <TextInput
                     style={styles.textInput}
-                    defaultValue="1"
+                    value={num.toString()}
                 />
                 <Button
                     title="+"
                     style={styles.qtyBtn}
+                    onPress={() => {
+                        setNum(num + 1);
+                    }}
                 />
                 <View style={styles.addToChartBtn}>
                     <Button
