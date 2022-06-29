@@ -1,6 +1,6 @@
 import React from "react";
 import {AuthContext} from "../login/AuthContext";
-import {ActivityIndicator, View, Text, Button, FlatList, SafeAreaView} from "react-native";
+import {ActivityIndicator, ScrollView, View, Text, Button, FlatList, SafeAreaView} from "react-native";
 import ProductBox from "../../components/ProductBox";
 import {styles} from "../../components/Styles";
 import {DetailBox} from "../../components/DetailBox";
@@ -39,29 +39,23 @@ const ProductDetailScreen = ({route, navigation}) => {
     }, []);
 
     return <SafeAreaView style={styles.container}>
-        {
-            Object.keys(data).length > 0 ? <DetailBox
-                images={data.product_images}
-                title={data.name}
-                readyQty={data.quantity}
-                description={data.description}
-            >
-                <FlatList
-                    data={datas}
-                    renderItem={({item}) =>
-                        <ProductBox title={item.name}
-                                    price={item.price}
-                                    showDetail={() => {
-                                        navigation.navigate('ProductDetail', {
-                                            id: item.id
-                                        });
-                                    }}
-                        />
-                    }
-                    numColumns={2}
-                />
-            </DetailBox> : <ActivityIndicator size="large" color="#00ff00" />
-        }
+        <ScrollView>
+            {
+                Object.keys(data).length > 0 ? <DetailBox
+                    images={data.product_images}
+                    title={data.name}
+                    readyQty={data.quantity}
+                    description={data.description}
+                >
+                </DetailBox> : <ActivityIndicator size="large" color="#00ff00" />
+            }
+        </ScrollView>
+        <View
+            style={{
+                backgroundColor: "#000",
+                height: 50
+            }}
+        ></View>
     </SafeAreaView>
 };
 export default ProductDetailScreen;

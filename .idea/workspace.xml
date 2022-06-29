@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79e3c25-4444-44a6-96f2-5ce75b4c4114" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/DetailBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DetailBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/home/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/home/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/home/ProductScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/home/ProductScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/home/SearchSceen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/home/SearchSceen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/product-detail/ProductDetailScrollViewScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/product-detail/ProductDetailScrollViewScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screens/home/ProductScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+            <state relative-caret-position="94">
+              <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screens/product-detail/ProductDetailScrollViewScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="897">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screens/home/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+            <state relative-caret-position="265">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,45 +54,85 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/ProductBox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/DetailBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="162" column="40" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
+            <state relative-caret-position="23">
+              <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#178#2596#0" />
+                <element signature="e#178#2981#0" />
+                <element signature="e#265#294#0" />
+                <element signature="e#335#1072#0" />
+                <element signature="e#446#603#0" />
+                <element signature="e#460#593#0" />
+                <element signature="e#642#1035#0" />
+                <element signature="e#693#1023#0" />
+                <element signature="e#778#840#0" />
+                <element signature="e#846#904#0" />
+                <element signature="e#928#1009#0" />
+                <element signature="e#1646#1845#0" />
+                <element signature="e#1858#2434#0" />
+                <element signature="e#1910#2008#0" />
+                <element signature="e#2025#2136#0" />
+                <element signature="e#2153#2251#0" />
+                <element signature="e#2268#2414#0" />
+                <element signature="e#2324#2390#0" />
+                <element signature="e#2531#2582#0" />
+                <element signature="e#2831#2860#0" />
+                <element signature="e#3026#3129#0" />
+                <element signature="e#4133#4158#0" />
+                <element signature="e#4642#4747#0" />
+                <element signature="e#5036#5235#0" />
+                <element signature="e#5248#6032#0" />
+                <element signature="e#5300#5499#0" />
+                <element signature="e#5415#5479#0" />
+                <element signature="e#5516#5633#0" />
+                <element signature="e#5650#5849#0" />
+                <element signature="e#5765#5829#0" />
+                <element signature="e#5866#6012#0" />
+                <element signature="e#5922#5988#0" />
+                <element signature="e#6129#6180#0" />
+                <element signature="e#6459#6499#0" />
+                <element signature="e#6885#6952#0" />
+                <element signature="e#6402#6429#0" />
+                <element signature="e#6450#6511#0" />
+                <element signature="e#6544#6575#0" />
+                <element signature="e#6596#6700#0" />
+                <element signature="e#6719#6746#0" />
+                <element signature="e#6762#6842#0" />
+                <element signature="e#6872#6921#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Styles.js">
+        <entry file="file://$PROJECT_DIR$/components/useAsyncState.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="46">
+              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/components/useSwipe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="-2">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +178,9 @@
       <find>Dimension</find>
       <find>white</find>
       <find>HEHE</find>
+      <find>TextInpu</find>
+      <find>zIndex</find>
+      <find>: any</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/screens</dir>
@@ -152,16 +197,18 @@
         <option value="$PROJECT_DIR$/screens/login/AuthContext.js" />
         <option value="$PROJECT_DIR$/screens/login/LoginScreen.js" />
         <option value="$PROJECT_DIR$/App.js" />
-        <option value="$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js" />
         <option value="$PROJECT_DIR$/db.json" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/screens/home/SearchSceen.js" />
         <option value="$PROJECT_DIR$/screens/product-detail/ProductDetailScrollViewScreen.js" />
-        <option value="$PROJECT_DIR$/components/DetailBox.js" />
         <option value="$PROJECT_DIR$/screens/home/HomeScreen.js" />
         <option value="$PROJECT_DIR$/components/ProductBox.js" />
         <option value="$PROJECT_DIR$/components/Styles.js" />
+        <option value="$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js" />
         <option value="$PROJECT_DIR$/screens/home/ProductScreen.js" />
+        <option value="$PROJECT_DIR$/components/useSwipe.js" />
+        <option value="$PROJECT_DIR$/components/useAsyncState.js" />
+        <option value="$PROJECT_DIR$/components/DetailBox.js" />
       </list>
     </option>
   </component>
@@ -176,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,6 +235,11 @@
               <item name="training-react-native-olshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="training-react-native-olshop" type="462c0819:PsiDirectoryNode" />
               <item name=".expo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="training-react-native-olshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="training-react-native-olshop" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="training-react-native-olshop" type="b2602c69:ProjectViewProjectNode" />
@@ -209,7 +262,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,17 +312,39 @@
       <workItem from="1656070383304" duration="597000" />
       <workItem from="1656320913424" duration="5684000" />
       <workItem from="1656406753356" duration="1001000" />
-      <workItem from="1656408656824" duration="4166000" />
+      <workItem from="1656408656824" duration="4878000" />
+      <workItem from="1656493516690" duration="5169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42097000" />
+    <option name="totallyTimeSpent" value="47978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="48" width="915" height="720" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3576233" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="RNConsole" order="10" weight="0.32888147" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.24956971" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3576233" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -285,12 +359,12 @@
       <window_info anchor="bottom" id="SonarLint" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="RNConsole" order="10" weight="0.32888147" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25215888" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.24956971" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -331,13 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -385,6 +452,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/ProductBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/adaptive-icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -394,55 +485,30 @@
     <entry file="file://$PROJECT_DIR$/assets/favicon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screens/home/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        <state relative-caret-position="265">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Styles.js">
+    <entry file="file://$PROJECT_DIR$/screens/product-detail/ProductDetailScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/DetailBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="162" column="40" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
+        <state relative-caret-position="205">
+          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#178#2596#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/product-detail/ProductDetailScrollViewScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ProductBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state relative-caret-position="897">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -451,10 +517,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/home/ProductScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        <state relative-caret-position="94">
+          <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/useSwipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/useAsyncState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/DetailBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#178#2981#0" />
+            <element signature="e#265#294#0" />
+            <element signature="e#335#1072#0" />
+            <element signature="e#446#603#0" />
+            <element signature="e#460#593#0" />
+            <element signature="e#642#1035#0" />
+            <element signature="e#693#1023#0" />
+            <element signature="e#778#840#0" />
+            <element signature="e#846#904#0" />
+            <element signature="e#928#1009#0" />
+            <element signature="e#1646#1845#0" />
+            <element signature="e#1858#2434#0" />
+            <element signature="e#1910#2008#0" />
+            <element signature="e#2025#2136#0" />
+            <element signature="e#2153#2251#0" />
+            <element signature="e#2268#2414#0" />
+            <element signature="e#2324#2390#0" />
+            <element signature="e#2531#2582#0" />
+            <element signature="e#2831#2860#0" />
+            <element signature="e#3026#3129#0" />
+            <element signature="e#4133#4158#0" />
+            <element signature="e#4642#4747#0" />
+            <element signature="e#5036#5235#0" />
+            <element signature="e#5248#6032#0" />
+            <element signature="e#5300#5499#0" />
+            <element signature="e#5415#5479#0" />
+            <element signature="e#5516#5633#0" />
+            <element signature="e#5650#5849#0" />
+            <element signature="e#5765#5829#0" />
+            <element signature="e#5866#6012#0" />
+            <element signature="e#5922#5988#0" />
+            <element signature="e#6129#6180#0" />
+            <element signature="e#6459#6499#0" />
+            <element signature="e#6885#6952#0" />
+            <element signature="e#6402#6429#0" />
+            <element signature="e#6450#6511#0" />
+            <element signature="e#6544#6575#0" />
+            <element signature="e#6596#6700#0" />
+            <element signature="e#6719#6746#0" />
+            <element signature="e#6762#6842#0" />
+            <element signature="e#6872#6921#0" />
           </folding>
         </state>
       </provider>

@@ -89,6 +89,7 @@ const ProductScreen = ({navigation}) => {
                                 onGoBack: (keyword) => getProducts(keyword)
                             });
                         }}
+                        placeholder="Search..."
                         value={searchText}
                     />
                     <TouchableOpacity

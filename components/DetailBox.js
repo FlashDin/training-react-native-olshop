@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView, Button, Image, TextInput, TouchableOpacity, Dimensions} from "react-native";
+import {useSwipe} from './../components/useSwipe';
 
 const DetailBox = (props) => {
     const [imageData, setImageData] = React.useState([]);
@@ -39,7 +40,12 @@ const DetailBox = (props) => {
         <View style={styles.box}>
             {
                 imageData.map((v, i) => <TouchableOpacity
-                    style={styles.showImage(v.isShow)}
+                    style={{
+                        ...styles.showImage(v.isShow),
+                        backgroundColor: 'green',
+                        borderRadius: 32,
+                        height: 300
+                    }}
                     onPress={() => {
                         showImage(1 + i);
                     }}
@@ -47,9 +53,11 @@ const DetailBox = (props) => {
                     <Image source={{
                         uri: v.path,
                     }}
-                           style={styles.image}
+                           style={{
+                               ...styles.image,
+                               marginTop: 100
+                           }}
                     />
-                    <Text>{1 + i}</Text>
                 </TouchableOpacity>)
             }
             <View style={styles.addToChartBox}>
@@ -83,11 +91,29 @@ const DetailBox = (props) => {
     </View>
 };
 
+// https://stackoverflow.com/questions/45854450/detect-swipe-left-in-react-native
 const DetailWithScrollWiewBox = (props) => {
     const [imageData, setImageData] = React.useState([]);
     const [num, setNum] = React.useState(1);
-
+    const [widthTo, setWidthTo] = React.useState(0);
+    const {onTouchStart, onTouchEnd} = useSwipe(onSwipeLeft, onSwipeRight, 6)
     const screenWidth = Dimensions.get('window').width;
+
+    function onSwipeLeft() {
+        if (widthTo <= screenWidth * imageData.length) {
+            console.log('SWIPE_LEFT');
+            setWidthTo(widthTo + screenWidth);
+            scrollViewRef.current.scrollTo({x: widthTo, y: 0, animated: true});
+        }
+    }
+
+    function onSwipeRight() {
+        if (widthTo >= 0) {
+            console.log('SWIPE_RIGHT');
+            setWidthTo(widthTo - screenWidth);
+            scrollViewRef.current.scrollTo({x: widthTo, y: 0, animated: true});
+        }
+    }
 
     React.useEffect(() => {
         showImage(0);
@@ -116,35 +142,42 @@ const DetailWithScrollWiewBox = (props) => {
                         horizontal={true}
                         showsVerticalScrollIndicator={false}
                         showsHorizontalScrollIndicator={false}
-                        scrollEnabled={true}
+                        scrollEnabled={false}
                         onScroll={(event) => {
-                            const scrolling = event.nativeEvent.contentOffset.x;
-                            if (scrolling === screenWidth / 2) {
-                                scrollViewRef.current.scrollTo({ x: screenWidth, y: 0, animated: false })
-                            } else {
-                                scrollViewRef.current.scrollTo({ x: scrolling + screenWidth, y: 0, animated: false })
-                            }
+                            // const scrolling = event.nativeEvent.contentOffset.x;
+                            // if (scrolling === screenWidth / 2) {
+                            //     scrollViewRef.current.scrollTo({ x: screenWidth, y: 0, animated: false })
+                            // } else {
+                            //     scrollViewRef.current.scrollTo({ x: scrolling + screenWidth, y: 0, animated: false })
+                            // }
                             // if (scrolling > 100) {
                             // }
                         }}
-                        // scrollEventThrottle={screenWidth}
+                // scrollEventThrottle={screenWidth}
                         ref={scrollViewRef}
-                        // onContentSizeChange={() => scrollViewRef.current.scrollToEnd({ animated: true })}
-                        // onContentSizeChange={() => scrollViewRef.current.scrollTo({ x: screenWidth, y: 0, animated: true })}
+                        onTouchStart={onTouchStart}
+                        onTouchEnd={onTouchEnd}
+                // onContentSizeChange={() => scrollViewRef.current.scrollToEnd({ animated: true })}
+                // onContentSizeChange={() => scrollViewRef.current.scrollTo({ x: screenWidth, y: 0, animated: true })}
             >
-            {
-                imageData.map((v, i) => <View style={{
-                    width: screenWidth,
-                    ...styles.showImage(true)
-                }}>
-                    <Image source={{
-                        uri: v.path,
-                    }}
-                           style={styles.image}
-                    />
-                    <Text>{1 + i}</Text>
-                </View>)
-            }
+                {
+                    imageData.map((v, i) => <View style={{
+                        width: screenWidth,
+                        ...styles.showImage(true),
+                        backgroundColor: '#056f61',
+                        borderRadius: 32,
+                    }}>
+                        <Image source={{
+                            uri: v.path,
+                        }}
+                               style={{
+                                   ...styles.image,
+                                   zIndex: 1
+                               }}
+                        />
+                        <Text>{1 + i}</Text>
+                    </View>)
+                }
             </ScrollView>
             <View style={styles.addToChartBox}>
                 <Text style={styles.title}>{props.title}</Text>
@@ -188,11 +221,14 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
     },
     image: {
-        height: 200
+        height: 100,
+        resizeMode: 'contain',
+        marginTop: 210,
     },
     scrollView: {
-        height: 200,
-        marginTop: 16
+        height: 300,
+        marginTop: 16,
+        zIndex: 0
     },
     title: {
         padding: 10
